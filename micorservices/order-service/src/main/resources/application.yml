@@ -53,3 +53,16 @@ resilience4j:
       inventory:
         max-attempts: 3
         wait-duration: 5s
+  # Kafka Properties
+  kafka:
+    bootstrap-servers: localhost:9092
+    template:
+      default-topic: notificationTopic
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring:
+          json:
+            type:
+            mapping: event:com.programmingmsa.orderservice.event.OrderPlacedEvent

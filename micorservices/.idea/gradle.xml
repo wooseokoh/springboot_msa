@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/api-gateway" />
             <option value="$PROJECT_DIR$/discovery-server" />
             <option value="$PROJECT_DIR$/inventory-service" />
+            <option value="$PROJECT_DIR$/notification-service" />
             <option value="$PROJECT_DIR$/order-service" />
             <option value="$PROJECT_DIR$/product-service" />
           </set>
@@ -43,6 +44,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/inventory-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/notification-service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/notification-service" />
           </set>
         </option>
       </GradleProjectSettings>
