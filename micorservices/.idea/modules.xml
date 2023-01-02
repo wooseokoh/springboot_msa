@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/micorservices.iml" filepath="$PROJECT_DIR$/.idea/micorservices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-gateway/micorservices.api-gateway.iml" filepath="$PROJECT_DIR$/.idea/modules/api-gateway/micorservices.api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/discovery-server/micorservices.discovery-server.iml" filepath="$PROJECT_DIR$/.idea/modules/discovery-server/micorservices.discovery-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/inventory-service/micorservices.inventory-service.iml" filepath="$PROJECT_DIR$/.idea/modules/inventory-service/micorservices.inventory-service.iml" />
+    </modules>
+  </component>
+</project>

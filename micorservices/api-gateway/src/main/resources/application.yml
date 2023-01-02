@@ -45,5 +45,3 @@ logging:
       springframework:
         cloud:
           gateway: TRACE
-server:
-  port: 8080

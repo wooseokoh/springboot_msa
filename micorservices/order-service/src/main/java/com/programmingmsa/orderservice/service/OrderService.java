@@ -48,6 +48,8 @@ public class OrderService {
 
         try (Tracer.SpanInScope isLookup = tracer.withSpanInScope(inventoryServiceLookup.start())) {
 
+            inventoryServiceLookup.tag("call", "inventory-service");
+
             InventoryResponse[] inventoryResponsArray = webClientBuilder.build().get()
                     .uri("http://inventory-service/api/inventory", uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build())
                     .retrieve()
@@ -66,7 +68,7 @@ public class OrderService {
                 throw new IllegalArgumentException("Product is not in stock, please try again later");
             }
         } finally {
-            inventoryServiceLookup.finish();
+            inventoryServiceLookup.flush();
         }
     }
 
