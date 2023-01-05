@@ -1,0 +1,16 @@
+server:
+  port: 8080
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:password@localhost:8761/eureka
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://postgres:5431/inventory-service
+    username: root
+    password: password
+  application:
+    name: order-service
+  zipkin:
+    base-url: http://localhost:9411
