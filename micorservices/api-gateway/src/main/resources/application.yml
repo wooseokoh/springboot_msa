@@ -45,3 +45,10 @@ logging:
       springframework:
         cloud:
           gateway: TRACE
+
+# Actuator Prometheus Endpoint
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus

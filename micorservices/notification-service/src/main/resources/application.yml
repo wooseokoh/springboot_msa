@@ -28,3 +28,10 @@ spring:
             type:
               mapping: event:com.programmingmsa.notificationservice.OrderPlacedEvent
       group-id: notificationId
+
+# Actuator Prometheus Endpoint
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus

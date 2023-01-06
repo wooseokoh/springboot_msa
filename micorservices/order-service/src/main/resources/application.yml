@@ -71,3 +71,10 @@ resilience4j:
           json:
             type:
             mapping: event:com.programmingmsa.orderservice.event.OrderPlacedEvent
+
+# Actuator Prometheus Endpoint
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus
